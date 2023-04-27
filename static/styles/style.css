@@ -1,0 +1,52 @@
+.login {
+    background-color: #041050;
+    color: #fff;
+    margin-bottom: 45px;
+  }
+  .jumbotron {
+    background-color: #fff;
+    color: #041050;
+  }
+
+  /* Set background color of exercise page */
+.exercise {
+  background-color: #fff;
+  margin-bottom: 45px;
+}
+
+/* Set color of navbar */
+.navbar {
+  background-color: #43529F;
+}
+
+/* Set active link color */
+.nav-link.active {
+  color: white;
+}
+
+/* Set color of h1 */
+.title {
+  background-color: #041050;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+/* Custom styles */
+.navbar {
+  background-color: #43529F;
+}
+
+
+/* Set margin and padding for cards */
+/* Set card border radius and shadow */
+.card-deck .card {
+  border-radius: .25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+}
+
+
+
+  

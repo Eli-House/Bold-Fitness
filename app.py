@@ -26,9 +26,7 @@ def login():
 @app.route("/exercise")
 def exercise():
     return render_template("exercise.html")
-    newexercise = Exercise(uname, passOne)
-    db_session.add(newUser)
-    db_session.commit()
+    newexercise = Lift()
 
 @app.route("/profile")
 def profile():

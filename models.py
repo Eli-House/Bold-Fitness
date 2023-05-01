@@ -48,10 +48,12 @@ class Lift(Base):
     __tablename__ = "lifts"
 
     id = Column("id", INTEGER, primary_key=True)
+    name = Column("name", TEXT)
     muscle_group = Column("muscle_group", TEXT)
     discription = Column("discription", TEXT)
 
-    def __init__(self, muscle_group, discription):
+    def __init__(self, name, muscle_group, discription):
+        self.name = name
         self.muscle_group = muscle_group
         self.discription = discription
 

@@ -3,10 +3,16 @@
     color: #fff;
     margin-bottom: 45px;
   }
-  .jumbotron {
+  .jlogin {
     background-color: #fff;
     color: #041050;
   }
+
+  .jprofile{
+    background-color: #041050;
+    color: #fff;
+  }
+   
 
   /* Set background color of exercise page */
 .exercise {
@@ -34,6 +40,15 @@
   margin-bottom: 5vh;
 }
 
+.name {
+  background-color: #43529F;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
 /* Custom styles */
 .navbar {
   background-color: #43529F;
@@ -47,6 +62,3 @@
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
 }
 
-
-
-  

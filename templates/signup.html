@@ -1,0 +1,43 @@
+{% extends "welcomebase.html" %}
+{% block title%}singup{% endblock %}
+{% block content %}
+<div class="col-sm-6">
+    <h2>Sign Up</h2>
+    <form>
+      <div class="form-group">
+        <label for="firstname">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter your username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text" class="form-control" id="password" placeholder="Enter your password">
+      </div>
+      <div class="form-group">
+        <label for="password">Confirm Password</label>
+        <input type="text" class="form-control" id="password" placeholder="Confirm password">
+      </div>
+      <div class="form-group">
+        <label for="firstname">First Name</label>
+        <input type="text" class="form-control" id="firstname" placeholder="Enter First name">
+      </div>
+      <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input type="text" class="form-control" id="lastname" placeholder="Enter last name">
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" class="form-control" id="lastname" placeholder="Enter your age">
+      </div>
+      <div class="form-group">
+        <label for="weight">Weight</label>
+        <input type="number" class="form-control" id="lastname" placeholder="Enter your weight">
+      </div>
+      <div class="form-group">
+        <label for="height">Height</label>
+        <input type="text" class="form-control" id="lastname" placeholder="Enter your height">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

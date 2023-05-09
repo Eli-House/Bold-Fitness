@@ -1,43 +1,76 @@
-{% extends "welcomebase.html" %}
-{% block title%}singup{% endblock %}
-{% block content %}
-<div class="col-sm-6">
-    <h2>Sign Up</h2>
-    <form>
-      <div class="form-group">
-        <label for="firstname">Username</label>
-        <input type="text" class="form-control" id="username" placeholder="Enter your username">
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="text" class="form-control" id="password" placeholder="Enter your password">
-      </div>
-      <div class="form-group">
-        <label for="password">Confirm Password</label>
-        <input type="text" class="form-control" id="password" placeholder="Confirm password">
-      </div>
-      <div class="form-group">
-        <label for="firstname">First Name</label>
-        <input type="text" class="form-control" id="firstname" placeholder="Enter First name">
-      </div>
-      <div class="form-group">
-        <label for="lastname">Last Name</label>
-        <input type="text" class="form-control" id="lastname" placeholder="Enter last name">
-      </div>
-      <div class="form-group">
-        <label for="age">Age</label>
-        <input type="number" class="form-control" id="lastname" placeholder="Enter your age">
-      </div>
-      <div class="form-group">
-        <label for="weight">Weight</label>
-        <input type="number" class="form-control" id="lastname" placeholder="Enter your weight">
-      </div>
-      <div class="form-group">
-        <label for="height">Height</label>
-        <input type="text" class="form-control" id="lastname" placeholder="Enter your height">
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+<!-- Modifyed ChatGPT Code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../static/styles/style.css">
+</head>
+<body class = "login">
+  <div class="jumbotron text-center jlogin">
+    <h1>Welcome</h1>
+    <h4>to</h4>
+    <h1>BOLD Fitness</h1>
   </div>
-</div>
-{% endblock %}
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Login</h2>
+        <a href="{{url_for('login')}}">Allready have an acount? Log in here.</a>
+      </div>
+      <div class="col-sm-6">
+        <h2>Sign Up</h2>
+        <form method = "POST">
+          <div class="form-group">
+            <label for="newusername">Username</label>
+            <input type="text" class="form-control" name="newusername" id="newusername" placeholder="Enter your username">
+          </div>
+          <div class="form-group">
+            <label for="newpassword">Password</label>
+            <input type="text" class="form-control" name="newpassword" id="newpassword" placeholder="Enter your password">
+          </div>
+          <div class="form-group">
+            <label for="checkpassword">Confirm Password</label>
+            <input type="text" class="form-control" name="checkpassword" id="checkpassword" placeholder="Confirm password">
+          </div>
+          <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Enter First name">
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Enter last name">
+          </div>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" name="age" id="age" placeholder="Enter your age">
+          </div>
+          <div class="form-group">
+            <label for="weight">Weight</label>
+            <input type="number" class="form-control" name="weight" id="weight" placeholder="Enter your weight">
+          </div>
+          <div class="form-group">
+            <label for="height">Height</label>
+            <input type="text" class="form-control" name="height" id="height" placeholder="Enter your height">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          {% with messages = get_flashed_messages() %}
+            {%if messages %}
+                {% for msg in messages %}
+                    <p>{{msg}} </p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!-- End Modifyed ChatGPT Code -->

@@ -3,10 +3,11 @@ The file that holds the logic to
 initialize and connect to the database.
 """
 
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, func
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 import logging
+
 
 # Setup logging out to a file
 db_log_file_name = 'db.log'
